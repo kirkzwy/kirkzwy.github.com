@@ -1,0 +1,24 @@
+#baseurl: /kirkzwy.github.io
+#服务器端口
+port: 3000
+#Jekyll自带语法高亮设置
+pygments: true
+#为相关文件生成索引
+lsi: false
+
+permalink: /:year/:month/:day/:title.html
+#每页包含文章数量
+#paginate: 
+#Markdown引擎及设置
+#markdown: redcarpet
+# enables SmartyPants (nice curly quotation marks, em/en dashes, elipses, etc):
+#redcarpet:
+  #extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+# Since GH pages override this to "true", we test this value to see if we are running locally
+#不支持自定义插件
+safe: false http://jekyllcn.com/docs/drafts/
+#包含文件
+include: [".well-known"]
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
