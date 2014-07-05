@@ -1,10 +1,10 @@
 ---
-title: "自我修炼地3天--用sketch提升了逼格"
+title: "自我修炼第3天--用sketch提升了逼格"
 layout: post
-photo_url: "http://ffanson.qiniudn.com/FFAnson/gh-pagefficondraft.JPG"
+photo_url: "http://ffanson.qiniudn.com/FFAnson/gh-pagefficondraft.JPG-indexRectangle1"
 comments: yes
 ---
-![](http://ffanson.qiniudn.com/FFAnson/gh-pagefficondraft.JPG)
+![](http://ffanson.qiniudn.com/FFAnson/gh-pagefficondraft.JPG-indexRectangle1)
 
 前两天因遇上屈原的佳节和突发的感冒，自我修炼效率较低，只是保持了每天一个番茄钟的javascript练习，还有就是sketch的自我。前天凌晨水果的WWDC大会上发布了新的开发语言swift，只能感叹真想在这个圈子混，这样的效率相当于no zuo no die啊！哥是辞了两份工的人。
 

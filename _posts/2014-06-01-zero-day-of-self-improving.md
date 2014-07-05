@@ -1,11 +1,11 @@
 ---
 title: "自我修炼第0天"
 layout: post
-photo_url: "http://ffanson.qiniudn.com/FFAnson/gh-pageroad.JPG"
+photo_url: "http://ffanson.qiniudn.com/FFAnson/gh-pageroad.JPG-indexRectangle1"
 comments: yes
 ---
 
-![](http://ffanson.qiniudn.com/FFAnson/gh-pageroad.JPG)
+![](http://ffanson.qiniudn.com/FFAnson/gh-pageroad.JPG-indexRectangle1)
 
 再次辞掉了工作，这是我辞掉的第二份工作，这份工作在我急需经济支援时给了我必要的帮助，除此以外，感觉与自己要做的事相去甚远。接着就是14天去云南说走就走的旅程，可能是出于逃避，也可能不是。这14天里我看到了人生以来最蓝的天，最多彩的云和最亮最多的星。还有感谢你对我一路的陪伴，有你在身边我笃信我们的路会一直走下去。
 

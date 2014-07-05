@@ -286,6 +286,7 @@ a.post-excerpt {
       opacity:0.5;
     }
 
+/* media query 响应布局 */
   @media screen and (min-width: 680px) {
     a.post-excerpt {
       position:relative;
