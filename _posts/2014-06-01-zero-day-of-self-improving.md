@@ -2,6 +2,7 @@
 title: "自我修炼第0天"
 layout: post
 photo_url: "http://ffanson.qiniudn.com/FFAnson/gh-pageroad.JPG-indexRectangle1"
+description: "再次辞掉了工作，这是我辞掉的第二份工作，这份工作在我急需经济支援时给了我必要的帮助，除此以外，感觉与自己要做的事相去甚远。"
 comments: yes
 ---
 
