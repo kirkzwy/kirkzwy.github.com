@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img src="http://ffanson.qiniudn.com/FFAnson/gh-pageDSC06213.JPG" width="245" height="163" align="right">
+<img src="http://ffanson.qiniudn.com/FFAnson/gh-pageDSC06213.JPG-indexRectangle1" width="360" height="191.25" align="right">
 
 大家好，我叫周铭新，很荣幸能在这里认识大家。现在我正处于人生的转型期，希望成为一位懂得前端技术的产品经理。在这里我会记录这一路的心路历程，在这里我会分享我的故事，也会在这里分享我的想法。我喜欢旅游，曾经拍过三部DV剧，希望大家喜欢：
 

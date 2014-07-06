@@ -15,14 +15,10 @@
     <link rel="apple-touch-icon-precomposed" href="/res/57*57appleTouchIcon.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/72*72appleTouchIcon.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/114*114appleTouchIcon.png">
-    <!--<meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@rsms">-->
     {% if page.ios_app_name %}
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     {% endif %}
-    <meta property="fb:admins" content="728642302">
-    <meta property="fb:app_id" content="38027689216">
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}">
       {% if page.description %}
@@ -42,8 +38,8 @@
     <meta property="og:image" content="{{ page.photo_url }}">
     {% endif %}
     {% endif %}
-    <meta property="og:url" content="http://rsms.me{{ page.url | remove_first:'index.html' }}">
-    <meta property="og:site_name" content="rsms.me">
+    <meta property="og:url" content="http://kirkzwy.github.io{{ page.url | remove_first:'index.html' }}">
+    <meta property="og:site_name" content="kirkzwy.github.io">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en_GB" />
     {% if page.date %}
@@ -57,27 +53,16 @@
     {% endif %}
   </head>
   <body{% if page.wide_layout %} class="wide"{% endif %}>
-    <!--script>/*
-      var s;
-      if (document.location.hostname === 'rsms.me') {
-        s = document.createElement('script');
-        s.async = true;
-        s.src = "http://connect.facebook.net/en_US/all.js#appId=38027689216&xfbml=1";
-        document.getElementsByTagName('head')[0].appendChild(s);
-      }
-      
-      if (window.navigator.userAgent.indexOf('iPad') != -1) {
-        document.documentElement.className = 'ios ipad';
-        window.rsmsHostIsIOS = 'ipad';
-      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
-        document.documentElement.className = 'ios iphone';
-        window.rsmsHostIsIOS = 'iphone';
-      }
-    */</script>
-    <div id="fb-root"></div><script></script-->
-    <iframe id="sidebar"></iframe>
+    <!--iframe id="sidebar"></iframe-->
     <header>
-      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="http://ffanson.qiniudn.com/FFAnson/gh-pagesignature-2-anson.png" width="160" height="50" alt="Signature"></a></h1>
+      <h1 class="logo" onclick="document.location.href='/';">
+        <a href="/">
+          <img src="http://ffanson.qiniudn.com/FFAnson/gh-page2XroundFFicon.png" width="84" height="84" alt="FFAnsonIcon">
+          <div>
+            <p text="Anson">Anson</p>
+          </div>
+        </a>
+      </h1>
       <ul class="navigation">
         <li><a href="/photos/"{% if page.url contains "/photos/" %}class="active"{% endif %} title="A selection of recent photography">Photography</a></li>
         <li><a href="/projects/"{% if page.url contains "/projects/" %}class="active"{% endif %} title="Projects I am or was involved in">Projects</a></li>
@@ -88,13 +73,6 @@
     <!--div class="wrapper content"-->
       {{ content }}
     <!--/div-->
-    
-    {% if page.fb_comments or page.comments %}
-    <!--div class="content sub">
-      <h2 id="comments">Comments</h2>
-      <div class="fb-comments" data-href="http://rsms.me{{ page.url }}" data-num-posts="{{ page.fb_comments }}" data-width="550" data-font="arial"></div>
-    </div-->
-    {% endif %}
     
     {% if paginator.page %}
     <div id="paginator" class="content">
