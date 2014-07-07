@@ -124,11 +124,12 @@ header {
       -webkit-transform: translate3d(0,0,0);
       -webkit-transition: 160ms -webkit-transform ease-out;
     }
-    header h1 a:hover {
+    header h1 a:link:hover {
       -webkit-transform: translate3d(0,2px,0);
   /*    -webkit-filter: blur(1px);
       -moz-filter: blur(1px);*/
       cursor:pointer;
+      text-decoration: none;
     }
     header h1 img { display:inline-block;}
     header h1 a div {
