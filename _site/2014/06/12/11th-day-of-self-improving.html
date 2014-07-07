@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <title>自我修炼第11天--用jekyll摸了一下GitHubPage的屁股 &mdash; FF Anson</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='/res/font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="FF Anson" href="http://feeds.feedburner.com/hunch">
+    <link rel="shortcut icon" href="/res/roundfavicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/57*57appleTouchIcon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/72*72appleTouchIcon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/114*114appleTouchIcon.png">
+    <!--<meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@rsms">-->
+    
+    <meta property="fb:admins" content="728642302">
+    <meta property="fb:app_id" content="38027689216">
+    
+    <meta property="og:title" content="自我修炼第11天--用jekyll摸了一下GitHubPage的屁股">
+      
+      <meta name="description" content="接下来谈一下这次GitHubPage的开发感受，为什么要搞这个东东，首先肯定是为了提升一下个人的逼格，有自己的个人博客一下子就感觉逼格提升了不少；然后GitHub这么牛掰，你不摸一下他的屁股，你还能混下去么。科普一下（有错请指教）GitHubPage就是一个托管在GitHub上的个人主页，他的理念就是简化个人主页上的文章更新，他已经有博客主题，所以简单到只要使用Markdown来写文章就可以进行博客的维护和更新。">
+      <meta name="og:description" content="接下来谈一下这次GitHubPage的开发感受，为什么要搞这个东东，首先肯定是为了提升一下个人的逼格，有自己的个人博客一下子就感觉逼格提升了不少；然后GitHub这么牛掰，你不摸一下他的屁股，你还能混下去么。科普一下（有错请指教）GitHubPage就是一个托管在GitHub上的个人主页，他的理念就是简化个人主页上的文章更新，他已经有博客主题，所以简单到只要使用Markdown来写文章就可以进行博客的维护和更新。">
+      
+    
+    
+    
+    
+    <meta property="og:url" content="http://rsms.me/2014/06/12/11th-day-of-self-improving.html">
+    <meta property="og:site_name" content="rsms.me">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    <meta property="article:published_time" content="2014-06-12">
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <!--script>/*
+      var s;
+      if (document.location.hostname === 'rsms.me') {
+        s = document.createElement('script');
+        s.async = true;
+        s.src = "http://connect.facebook.net/en_US/all.js#appId=38027689216&xfbml=1";
+        document.getElementsByTagName('head')[0].appendChild(s);
+      }
+      
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.rsmsHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.rsmsHostIsIOS = 'iphone';
+      }
+    */</script>
+    <div id="fb-root"></div><script></script-->
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="http://ffanson.qiniudn.com/FFAnson/gh-pagesignature-2-anson.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <div class="content">
+  <div class="post single">
+    
+    <h1>自我修炼第11天--用jekyll摸了一下GitHubPage的屁股</h1>
+    <info datetime="2014-06-12">
+      Jun 12, 2014
+    </info>
+    
+    <div class="body"><p>自我修炼已经过了11天，如果说这次闭关的时间仅有91天的话，那么就时间已经过了十分一多，接下来还是要抓紧。这次用trello做了这几天的计划，希望自己能按照计划进行，虽然大体上能完成，但还是在中途浪费了两天的时间。为了更好利用时间，从昨天起在trello的board中增加了每天的工作安排，以便在总的计划底下，能更加细化每天的工作。除此之外，结合番茄工作法，每天的工作量必须要最少在15个番茄钟以上（1个番茄钟=25minutes）。</p>
+
+<p>在这11天的修炼中，第一是对如何使用sketch有了一个大致的概念；第二是坚持了9天每天一个番茄钟的在codecademy上的javascript练习；第三是进一步熟练了Markdown的使用，果然是写作利器；第四是坚持了Objective-C的学习，虽然我知道Swift横空出了世，但我觉得要做出一个好的应用，还是需要一定Objective-C的知识，OC对于类的使用和对象的使用真的跟之前学习javascript的对象有很大区别，类的定义方式不同，类的使用方式不同（类的使用是从信息传递的角度展开），类的实例如果包含了对另外一个对象的指针就类似于对另一个对象有了所有权（这会引出retain循环和弱引用），还有Xcode的确是一个开发神器；第五翻译了一部分某个叫framework7的开源框架的文档，下一个阶段要尝试使用该框架进行开发；最后，就是初步完成这个阶段的实操重点GitHubPage的个人博客，但还有很多地方需要修改啊&hellip;&hellip;</p>
+
+<p>接下来谈一下这次GitHubPage的开发感受，为什么要搞这个东东，首先肯定是为了提升一下个人的逼格，有自己的个人博客一下子就感觉逼格提升了不少；然后GitHub这么牛掰，你不摸一下他的屁股，你还能混下去么。科普一下（有错请指教）GitHubPage就是一个托管在GitHub上的个人主页，他的理念就是简化个人主页上的文章更新，他已经有博客主题，所以简单到只要使用Markdown来写文章就可以进行博客的维护和更新。这是GitHub的<a href="https://pages.github.com/">官方介绍</a>和<a href="https://help.github.com/categories/20/articles">官方帮助</a>。</p>
+
+<p>秉承no zuo no die的精神，肯定要找点东西折腾一下，因为官方提供的主题模板太好（fu）看（za）了，我唯有做一个更好看的超越他。为了不重复制造轮子，经过一番搜索后，终于找到一个有潜质的<a href="http://rsms.me/">模板</a>。因为GitHubPage用的是jekyll这个引擎进行生成，所以你可以在本地安装jekyll进行本地生成，预览效果。关于如何使用jekyll进行开发，网上也有足够文章介绍，下面是我在开发过程觉得比较有用的一些网站和文章：</p>
+
+<ul>
+<li><a href="http://jekyllcn.com/">jekyll中文网站</a></li>
+<li><a href="http://jekyllrb.com/">jekyll官方网站</a></li>
+<li><a href="http://www.zhanxin.info/jekyll/2013-08-07-jekyll-doc-installation.html">jekyll教程</a></li>
+<li><a href="http://ellochen.github.io/2013/03/%e5%86%99%e4%bd%9c%e7%8e%af%e5%a2%83%e6%90%ad%e5%bb%ba(git+github+markdown+jekyll">jekyll文章集合</a>/)</li>
+</ul>
+
+
+<p>看完上述的文章也你的jekyll神功也应该修炼得差不多了。有几点心得想跟各位看官分享一下。整个写作环境的搭建分为以下几个步骤：</p>
+
+<p>1.jekyll的安装</p>
+
+<blockquote><p>（1）安装jekyll前要先安装好gem（这时Mac的优势就体现出来了，Mac果然是为程序员而造的），有网上的文章提议安装时要换一个淘宝的镜像，但是经过实践发现，淘宝镜像上面的源已经很久了，但是官方的源又被墙了，所以本人还是建议挂vpn进行安装，包括安装jekyll时也挂着吧；（2）jekll是保持一直更新的，更新的命令是<code>$ gem update jekyll</code>。</p></blockquote>
+
+<p>2.博客框架的制作或模板修改
+3.写作博客内容</p>
+
+<blockquote><p>在用Markdown写作引用图片时，一定要使用外部源，不要使用本地文件，否则生成的图片链接地址会出现问题，导致图片不能显示（本人就是被这个问题纠缠了很长时间，后来使用七牛云作为图片的外部源解决问题的）。不知道这是不是系统问题，这个要查一下GitHubpage的文档。</p></blockquote>
+
+<p>4.在GitHub上面申请页面</p>
+
+<blockquote><p>其实GitHub上的页面是分成2种的，（1）是个人主页，这种是一个账号只有一个，在GitHub新建库时一定要将库名命名为<code>username.github.com</code>,这时生成的才是个人主页，域名可以修改，不过默认的域名为<code>username.github.com</code>;（2）项目的主页，这时下挂在项目下面的介绍主页，一个库可以挂一个，默认域名是<code>username.githum.io/repositoryname/</code>，而且必须是在分支<code>gh-page</code>上push文件，才会生成项目主页，此时在jekyll的配置文档<code>_config.yml</code>上设置<code>baseurl</code>为<code>repositoryname</code>。并且我是用GitHub自带的主题模板先生成一次，才会是GitHubPage。</p></blockquote>
+
+<p>5.使用git同步文件到GitHub</p>
+
+<blockquote><p>这里是熟悉git操作的机会。</p></blockquote>
+
+<p>到这里我的个人主页基本就搭载好了。但关于个人主页还有很多可以提升的地方：</p>
+
+<ul>
+<li>主页图片的优化。目前主页的图片使用的都是摄影原图，文件太大，加载太慢了，这个可以考虑使用<a href="http://incident57.com/codekit/index.html">codekit</a>进行优化。</li>
+<li>建立内部搜索引擎。不过谷姐最近被封得太厉害了，所以在自定义搜索引擎时要再考虑一下。</li>
+<li>建立文章分类和标签，优化主页的文章归档。</li>
+<li>以上等等&hellip;&hellip;</li>
+</ul>
+
+
+<p>最后，下一阶段的修炼要再增加实操的时间。
+Come Anson！不努力的人没资格抱怨！</p>
+</div>
+    <!-- <div class="breaker"></div> -->
+    <div class="breaker"></div>
+    <!-- <info class="after">
+<div class="fb-like" data-href="http://rsms.me/2014/06/12/11th-day-of-self-improving.html" data-send="false" data-width="550" data-show-faces="false" data-font="arial"></div>
+    </info> -->
+
+  
+  </div>
+</div>
+
+
+    <!--/div-->
+    
+    
+    <!--div class="content sub">
+      <h2 id="comments">Comments</h2>
+      <div class="fb-comments" data-href="http://rsms.me/2014/06/12/11th-day-of-self-improving.html" data-num-posts="" data-width="550" data-font="arial"></div>
+    </div-->
+    
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="/res/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9078556-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>

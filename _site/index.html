@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <title>FF Anson</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href='/res/font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" media="screen, projection" href="/res/screen.css" type="text/css">
+    <link rel="stylesheet" media="print" href="/res/print.css" type="text/css">
+    <link rel="alternate" type="application/atom+xml" title="FF Anson" href="http://feeds.feedburner.com/hunch">
+    <link rel="shortcut icon" href="/res/roundfavicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/res/57*57appleTouchIcon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/res/72*72appleTouchIcon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/res/114*114appleTouchIcon.png">
+    <!--<meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@rsms">-->
+    
+    <meta property="fb:admins" content="728642302">
+    <meta property="fb:app_id" content="38027689216">
+    
+      <meta name="description" content="FF Anson">
+    
+    
+    
+    
+    <meta property="og:url" content="http://rsms.me/">
+    <meta property="og:site_name" content="rsms.me">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_GB" />
+    
+    
+    <script>
+  //html { zoom:50%; }
+  if (window.addEventListener) {
+    var sidebarAdjustTimer;
+    function updateOrientation(orientationChangeEvent) {
+      if (sidebarAdjustTimer) clearInterval(sidebarAdjustTimer);
+      //console.log('window.orientation -> '+window.orientation);
+      if (window.orientation === -90 || window.orientation === 90) {
+        // landscape
+        var sidebar = document.getElementById('sidebar');
+        if (!sidebar.src || sidebar.src === '') {
+          sidebar.src = '/archive/sidebar.html';
+        }
+        sidebarAdjustTimer = setInterval(function() {
+          var height = Math.round(document.height * 1.6);
+          if (sidebar.height != height) {
+            sidebar.height = height;
+            sidebar.style.height = height + 'px';
+          }
+        },500);
+      } else {
+        // portrait
+      }
+    }
+    window.addEventListener('orientationchange', updateOrientation);
+    document.addEventListener('DOMSubtreeModified', function(ev) {
+      if (document.getElementById('sidebar')) {
+        document.removeEventListener('DOMSubtreeModified', arguments.callee);
+        updateOrientation();
+      }
+    });
+  }
+</script>
+    
+    
+  </head>
+  <body>
+    <!--script>/*
+      var s;
+      if (document.location.hostname === 'rsms.me') {
+        s = document.createElement('script');
+        s.async = true;
+        s.src = "http://connect.facebook.net/en_US/all.js#appId=38027689216&xfbml=1";
+        document.getElementsByTagName('head')[0].appendChild(s);
+      }
+      
+      if (window.navigator.userAgent.indexOf('iPad') != -1) {
+        document.documentElement.className = 'ios ipad';
+        window.rsmsHostIsIOS = 'ipad';
+      } else if (window.navigator.userAgent.indexOf('iPhone') != -1) {
+        document.documentElement.className = 'ios iphone';
+        window.rsmsHostIsIOS = 'iphone';
+      }
+    */</script>
+    <div id="fb-root"></div><script></script-->
+    <iframe id="sidebar"></iframe>
+    <header>
+      <h1 class="logo" onclick="document.location.href='/';"><a href="/"><img src="http://ffanson.qiniudn.com/FFAnson/gh-pagesignature-2-anson.png" width="160" height="50" alt="Signature"></a></h1>
+      <ul class="navigation">
+        <li><a href="/photos/" title="A selection of recent photography">Photography</a></li>
+        <li><a href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+        <li><a href="/archive/" title="Archived articles">Archive</a></li>
+        <li><a href="/about/">About me</a></li>
+      </ul>
+    </header>
+    <!--div class="wrapper content"-->
+      <!-- <div class="content full-bleed intro">
+  Welcome to my homepage!!1
+</div> -->
+<div class="posts">
+  <div class="content full-bleed" id="recent-posts">
+  <!--<div class="image"><img class="padded-content" src="http://ffanson.qiniudn.com/FFAnson/gh-pageDSC03780.jpg"></div>-->
+  <a
+    href="/2014/06/12/11th-day-of-self-improving.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">自我修炼第11天--用jekyll摸了一下GitHubPage的屁股</div>
+      
+        <!-- <div class="title">自我修炼第11天--用jekyll摸了一下GitHubPage的屁股</div> -->
+        <info datetime="">
+          Jun 2014
+        </info>
+        
+        <span class="body">接下来谈一下这次GitHubPage的开发感受，为什么要搞这个东东，首先肯定是为了提升一下个人的逼格，有自己的个人博客一下子就感觉逼格提升了不少；然后GitHub这么牛掰，你不摸一下他的屁股，你还能混下去么。科普一下（有错请指教）GitHubPage就是一个托管在GitHub上的个人主页，他的理念就是简化个人主页上的文章更新，他已经有博客主题，所以简单到只要使用Markdown来写文章就可以进行博客的维护和更新。</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a><a
+    href="/2014/06/04/third-day-of-self-improving.html" class="post-excerpt photo">
+      <div class="padded-content">
+        <div class="title">自我修炼第3天--用sketch提升了逼格</div>
+      
+        <div class="image" style="background-image:url('http://ffanson.qiniudn.com/FFAnson/gh-pagefficondraft.JPG-indexRectangle1')"></div>
+      <!-- post.photo_url -->
+      </div>
+    </a><a
+    href="/2014/06/01/zero-day-of-self-improving.html" class="post-excerpt photo">
+      <div class="padded-content">
+        <div class="title">自我修炼第0天</div>
+      
+        <div class="image" style="background-image:url('http://ffanson.qiniudn.com/FFAnson/gh-pageroad.JPG-indexRectangle1')"></div>
+      <!-- post.photo_url -->
+      </div>
+    </a><a
+    href="/2014/04/02/user-experiments-by-mianjing.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">由面筋的装载方式引发的用户体验联想</div>
+      
+        <!-- <div class="title">由面筋的装载方式引发的用户体验联想</div> -->
+        <info datetime="">
+          Apr 2014
+        </info>
+        
+        <span class="body">今夜忍着剧烈的饥饿感，带着久未运动的躯体，进行了一场几乎长达2个小时的羽毛球运动。期间抚慰身体的只有一瓶宝矿力，幸好今晚的对手比较忍让，我的表现还算不错。打球毕，直接坐车回家，途中仍然无物下肚，饿极，发晕。闲话少说，转入正题。</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a><a
+    href="/2014/03/25/my-firstday-work.html" class="post-excerpt">
+      <div class="padded-content">
+        <div class="title">第一天工作</div>
+      
+        <!-- <div class="title">第一天工作</div> -->
+        <info datetime="">
+          Mar 2014
+        </info>
+        
+        <span class="body">今天是新工作的第一天，终于踏上了梦想的第一步，但今天载上的并不是通向梦想之舟，只能载我到中转站。</span>
+        
+      <!-- post.photo_url -->
+      </div>
+    </a>
+    <div class="breaker"></div>
+    <div class="end">
+      <a href="/archive/">More...</a>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+/*(function(f){
+  var onload = function(f) {
+    if (window.addEventListener) {
+      window.addEventListener('DOMContentLoaded', f, false);
+    } else {
+      window.attachEvent('onload', f);
+    }
+  };
+  onload(function(){
+    f();
+    if (window.addEventListener) {
+      window.addEventListener('resize', f, false);
+    } else {
+      window.attachEvent('resize', f);
+    }
+  });
+})(function(){
+  var winw = window.innerWidth, w; //, width_thresholds = [680, 780];
+  w = window.__post_grid_width;
+
+  if ( (w !== undefined) &&
+       ( (w === 680 && winw < 680) ||
+         (w === 780 && winw >= 680 && winw < 780) ||
+         (w === 10000 && winw >= 780)
+       )
+     )
+  {
+    // console.log('noop w:', w+ ', winw:', winw);
+    return;
+  } else {
+    window.__post_grid_width = w =
+      winw > 780 ? 10000 :
+      winw > 680 ? 780 :
+                   680;
+    // console.log('op w:', w);
+  }
+
+  var posts = document.getElementById('recent-posts');
+  var child_nodes = posts.childNodes, k, node, h,
+      col_width, col0_y, col1_y, col1_x,
+      origin = {x:0, y:0}, node_count = 0, is_col0, row0_max_y;
+
+  posts.style.position = (window.__post_grid_width <= 680) ? null : 'relative';
+
+  for (k in child_nodes) {
+    node = child_nodes[k];
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      if (node.className === 'breaker') {
+        if (window.__post_grid_width <= 680) {
+          node.style.height = null;
+        } else {
+          node.style.height = (Math.max(col0_y, col1_y) - row0_max_y) + 'px';
+        }
+        break;
+      }
+      if (col0_y === undefined) {
+        origin.x = node.offsetLeft;
+        origin.y = node.offsetTop;
+        col_width = node.clientWidth;
+        col0_y = origin.y + node.clientHeight;
+        row0_max_y = col0_y;
+      } else {
+        if (col1_y === undefined) {
+          col1_y = origin.y + node.clientHeight;
+          col1_x = origin.x + node.clientWidth;
+          if (col1_y > row0_max_y) {
+            row0_max_y = col1_y;
+          }
+        } else {
+          if (window.__post_grid_width <= 680) {
+            // console.log('Clear');
+            node.style.position = null;
+            node.style.width = null;
+            node.style.left = null;
+            node.style.top = null;
+          } else {
+            is_col0 = (node_count % 2) === 0;
+            node.style.position = 'absolute';
+            node.style.width = col_width + 'px';
+            if (is_col0) {
+              node.style.left = origin.x + 'px';
+              node.style.top = col0_y + 'px';
+              col0_y += node.clientHeight;
+            } else {
+              node.style.left = col1_x + 'px';
+              node.style.top = col1_y + 'px';
+              col1_y += node.clientHeight;
+            }
+          }
+          // console.dir(node);
+        }
+      }
+      ++node_count;
+    }
+  }
+
+});*/
+</script>
+
+    <!--/div-->
+    
+    
+    
+    
+    
+    
+    <footer>
+      <p>
+        <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US" class="cc"><img src="/res/cc-cc.png" class="cc">
+        <img src="/res/cc-by.png" class="cc"></a>
+        This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons License</a>
+      </p>
+    </footer>
+    
+    
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="/res/prettify.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9078556-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>
