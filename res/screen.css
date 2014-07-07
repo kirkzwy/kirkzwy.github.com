@@ -179,7 +179,7 @@ header {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 300%
+    font-weight: 300%;
   }
   header ul.navigation li a:hover { color: rgba(1,134,234,0.9); text-decoration: none; }
   header ul.navigation li a.active { font-weight:500%; color:rgba(1,134,234,0.9); }
@@ -600,6 +600,103 @@ footer {
     color:#778;
   }
 
+/* Post header style */
+header.navbar{
+  text-align: left;
+  height: auto;
+  width: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 0 2em;
+  padding: 0.6em 1em;
+  color: #fff;
+  background: rgba(21, 134, 234, .35);
+  opacity: 0.97;
+  filter: alpha(opacity=@opacity * 100);
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.navbar a img, .navbar a div{
+  display: inline-block;
+}
+.navbar a{
+  float: left;
+  display: inline-block;
+  line-height: 0.1em;
+}
+.navbar a div{
+  position: relative;
+
+}
+.navbar a:link:hover {
+      -webkit-transform: translate3d(0,2px,0);
+  /*    -webkit-filter: blur(1px);
+      -moz-filter: blur(1px);*/
+      cursor:pointer;
+      text-decoration: none;
+    }
+.navbar a div p {
+      margin: 0;
+      display: block;
+      font:1em 'Display';
+      color:rgba(255,255,255,1);
+    }
+.navbar a div p::before {
+      position:absolute;
+      top:0;
+      left:0;
+      margin:0;
+      content: attr(text);
+      font-family:'Two';
+      color:rgba(1,134,255,0.8);
+    }
+.navbar a div p::after {
+      position:absolute;
+      top:0;
+      left:0;
+      margin-left:0;
+      content: attr(text);
+      font-family:'Three';
+      color: rgba(45,153,200,0.8);
+    }
+.navbar ul.navigation {
+    float: right;
+    display:inline-block;
+    /*text-align: right;*/
+    line-height: 0.1em;
+    vertical-align: middle;
+    margin: 0px auto 0px auto;
+    font-family: helvetica, sans-serif;
+  }
+.navbar ul.navigation li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 1em;
+  }
+.navbar ul.navigation li:first-child { margin-left: 0; }
+.navbar ul.navigation li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 150%
+  }
+.navbar ul.navigation li a:hover { color: rgba(1,134,234,0.9); text-decoration: none; }
+.navbar ul.navigation li a.active { font-weight:500%; color:rgba(1,134,234,0.9); }
+.navbar.hide {
+  display: none;
+  -webkit-animation: up 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+.navbar.show {
+  -webkit-animation: down 1s;
+  -webkit-animation-fill-mode: forwards;
+}
 /* Viewport size */
 
 @media screen and (min-width: 480px) {
@@ -617,6 +714,9 @@ footer {
   header ul.navigation li a {
     font-size: 15px;
     font-weight: 150%
+  }
+  header.navbar ul.navigation li a{
+    font-size: 0.65em;
   }
 }
 /* device specifics */
